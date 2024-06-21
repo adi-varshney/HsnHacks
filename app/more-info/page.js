@@ -119,7 +119,7 @@ const FAQ = () => {
       <main>
         <div className="mb-10">
           <h1 className="text-3xl font-bold mb-4">General FAQ</h1>
-          <div className="bg-white p-6 rounded-lg shadow-lg">
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
             {generalFaqData.map((item, index) => (
               <Accordion
                 key={index}
@@ -132,7 +132,7 @@ const FAQ = () => {
 
         <div className="mb-10">
           <h1 className="text-3xl font-bold mb-4">Registration/Teams FAQ</h1>
-          <div className="bg-white p-6 rounded-lg shadow-lg">
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
             {teamsFaqData.map((item, index) => (
               <Accordion
                 key={index}
@@ -145,7 +145,7 @@ const FAQ = () => {
 
         <div className="mb-10">
           <h1 className="text-3xl font-bold mb-4">Logistics FAQ</h1>
-          <div className="bg-white p-6 rounded-lg shadow-lg">
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
             {logisticsFaqData.map((item, index) => (
               <Accordion
                 key={index}
@@ -158,7 +158,7 @@ const FAQ = () => {
 
         <div className="mb-10">
           <h1 className="text-3xl font-bold mb-4">Judges FAQ</h1>
-          <div className="bg-white p-6 rounded-lg shadow-lg">
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
             {judgesFaqData.map((item, index) => (
               <Accordion
                 key={index}
@@ -171,7 +171,7 @@ const FAQ = () => {
 
         <div className="mb-10">
           <h1 className="text-3xl font-bold mb-4">Prizes FAQ</h1>
-          <div className="bg-white p-6 rounded-lg shadow-lg">
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
             {prizesFaqData.map((item, index) => (
               <Accordion
                 key={index}
