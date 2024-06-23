@@ -114,74 +114,92 @@ const prizesFaqData = [
 ];
 
 const FAQ = () => {
+
+  const NavBar = () => {
+    return(
+      <nav className="flex justify-between items-center p-4 bg-gray-800 text-white">
+        <div className="text-xl font-bold">HSN Hacks</div>
+        <ul className="flex gap-4">
+          <li><a className="hover:text-gray-400" href="/">Home</a></li>
+          <li><a className="hover:text-gray-400" href="/more-info">FAQ</a></li>
+          <li><a className="hover:text-gray-400" href="/team">Our Team</a></li>
+          <li><a className="hover:text-gray-400" href="/sponsorships">Sponsors</a></li>
+        </ul>
+      </nav>
+    );
+  };
+
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8">
-      <main>
-        <div className="mb-10">
-          <h1 className="text-3xl font-bold mb-4">General FAQ</h1>
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-            {generalFaqData.map((item, index) => (
-              <Accordion
-                key={index}
-                question={item.question}
-                answer={item.answer}
-              />
-            ))}
+    <div>
+      <NavBar />
+      <div className="max-w-3xl mx-auto px-4 py-8">
+        <main>
+          <div className="mb-10">
+            <h1 className="text-3xl font-bold mb-4">General FAQ</h1>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+              {generalFaqData.map((item, index) => (
+                <Accordion
+                  key={index}
+                  question={item.question}
+                  answer={item.answer}
+                />
+              ))}
+            </div>
           </div>
-        </div>
 
-        <div className="mb-10">
-          <h1 className="text-3xl font-bold mb-4">Registration/Teams FAQ</h1>
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-            {teamsFaqData.map((item, index) => (
-              <Accordion
-                key={index}
-                question={item.question}
-                answer={item.answer}
-              />
-            ))}
+          <div className="mb-10">
+            <h1 className="text-3xl font-bold mb-4">Registration/Teams FAQ</h1>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+              {teamsFaqData.map((item, index) => (
+                <Accordion
+                  key={index}
+                  question={item.question}
+                  answer={item.answer}
+                />
+              ))}
+            </div>
           </div>
-        </div>
 
-        <div className="mb-10">
-          <h1 className="text-3xl font-bold mb-4">Logistics FAQ</h1>
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-            {logisticsFaqData.map((item, index) => (
-              <Accordion
-                key={index}
-                question={item.question}
-                answer={item.answer}
-              />
-            ))}
+          <div className="mb-10">
+            <h1 className="text-3xl font-bold mb-4">Logistics FAQ</h1>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+              {logisticsFaqData.map((item, index) => (
+                <Accordion
+                  key={index}
+                  question={item.question}
+                  answer={item.answer}
+                />
+              ))}
+            </div>
           </div>
-        </div>
 
-        <div className="mb-10">
-          <h1 className="text-3xl font-bold mb-4">Judges FAQ</h1>
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-            {judgesFaqData.map((item, index) => (
-              <Accordion
-                key={index}
-                question={item.question}
-                answer={item.answer}
-              />
-            ))}
+          <div className="mb-10">
+            <h1 className="text-3xl font-bold mb-4">Judges FAQ</h1>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+              {judgesFaqData.map((item, index) => (
+                <Accordion
+                  key={index}
+                  question={item.question}
+                  answer={item.answer}
+                />
+              ))}
+            </div>
           </div>
-        </div>
 
-        <div className="mb-10">
-          <h1 className="text-3xl font-bold mb-4">Prizes FAQ</h1>
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-            {prizesFaqData.map((item, index) => (
-              <Accordion
-                key={index}
-                question={item.question}
-                answer={item.answer}
-              />
-            ))}
+          <div className="mb-10">
+            <h1 className="text-3xl font-bold mb-4">Prizes FAQ</h1>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+              {prizesFaqData.map((item, index) => (
+                <Accordion
+                  key={index}
+                  question={item.question}
+                  answer={item.answer}
+                />
+              ))}
+            </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
     </div>
   );
 };
