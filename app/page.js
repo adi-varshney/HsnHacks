@@ -13,9 +13,12 @@ export default function Home() {
   }, []);
 
   const NavBar = () => {
-    return(
+    return (
       <nav className="flex justify-between items-center p-4 bg-gray-800 text-white">
-        <div className="text-xl font-bold">HSN Hacks</div>
+        <div className="flex items-center">
+          <img src="../favicon.ico" alt="favicon" className="w-9 h-9 mr-2" />
+          <div className="text-xl font-bold">HSN Hacks</div>
+        </div>
         <ul className="flex gap-4">
           <li><a className="hover:text-gray-400" href="/">Home</a></li>
           <li><a className="hover:text-gray-400" href="/more-info">FAQ</a></li>
