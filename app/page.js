@@ -42,7 +42,7 @@ export default function Home() {
 
         <div className="text-3xl flex flex-row font-mono z-10">
           <div className="flex-1 text-center">
-            <p>When: TBD</p>
+            <p>When: October 20th</p>
           </div>
           <div className="flex-1 text-center">
             <p>What: 24 hour in-person Highschooler hackathon</p>
