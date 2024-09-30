@@ -9,7 +9,7 @@ const generalFaqData = [
   {
     question: "When is HSN Hacks?",
     answer:
-      "A date will be provided in the coming weeks. It will most likely take place in the fall, around October or November.",
+      "October 20 from 8 AM to 8 PM",
   },
   {
     question: "Is this hackathon purely coding-based?",
@@ -22,7 +22,7 @@ const generalFaqData = [
   },
   {
     question: "What will I build? ",
-    answer: "Placeholder",
+    answer: "Build an app, website, or any sort of software that addresses our theme of criminal justice."
   },
   {
     question: "How will I submit?",
@@ -50,13 +50,13 @@ const teamsFaqData = [
       "HSN Hacks is strictly for highschoolers and middle schoolers. College students will not be allowed to attend. ",
   },
   {
-    question: "What if I’ve never coded before?",
+    question: "What if I've never coded before?",
     answer:
       "You do not need any prior coding experience. This is a great way to get introduced to programming. Workshops will help you get started with the basics.",
   },
   {
     question: "How will teams work?",
-    answer: "Placeholder",
+    answer: "We have two sections, middle school and high school. If you show up with a team, you can compete with them. If not, we can put you in a team with the section you're in.",
   },
   {
     question: "Are you required to have a team to register? ",
@@ -93,7 +93,8 @@ const judgesFaqData = [
   },
   {
     question: "Who are the judges?",
-    answer: "Placeholder",
+    answer: "Our judges are distinguished people from many places! They include Ms. Kelly Vostal, a computer science teacher at our school, Aneetha " + 
+    "Thokkadam, a CS student at Georgie Tech, and Abul Khair, a lead architect at Intellect, Inc.",
   },
   {
     question: "How will they grade projects?",
