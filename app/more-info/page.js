@@ -35,7 +35,7 @@ const generalFaqData = [
   },
   {
     question: "Is food provided?",
-    answer: "Breakfast, lunch, and dinner will be provided.",
+    answer: "Two slices of pizza per person for lunch will be provided. Breakfast and dinner will not be provided. Participants also are free to bring their own food and snacks.",
   },
   {
     question: "Is this hackathon purely coding-based?",
