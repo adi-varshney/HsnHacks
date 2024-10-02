@@ -41,38 +41,54 @@ export default function Team() {
         </div>
 
         <div className="text-center mb-8">
-          <h2 className="text-4xl">Logistics</h2>
+          <h2 className="text-4xl">Leads</h2>
         </div>
         <div className="flex flex-wrap justify-center">
           <Card
-            name="Akshat Mehta"
-            about="Department Leader"
-          />
-          <Card
             name="Alex Wang"
-            about="Department Leader"
-          />
-          <div className="w-full"></div>
-          <Card
-            name="Prathyush Yeturi"
-            about="Member"
+            about="Hackathon Lead"
           />
           <Card
-            name="Charlie Xue"
-            about="Member"
+            name="Placeholder"
+            about="Hackathon Lead"
           />
-          <Card
-            name="Kashish Arora"
-            about="Member"
-          />
-          <Card
-            name="Rajveer Dharkar"
-            about="Member"
-          />
-          <Card
-            name="Arjun Mehan"
-            about="Member"
-          />
+        </div>
+
+        <div className="py-5">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl">Logistics</h2>
+          </div>
+          <div className="flex flex-wrap justify-center">
+            <Card
+              name="Akshat Mehta"
+              about="Department Leader"
+            />
+            <Card
+              name="Alex Wang"
+              about="Department Leader"
+            />
+            <div className="w-full"></div>
+            <Card
+              name="Prathyush Yeturi"
+              about="Member"
+            />
+            <Card
+              name="Charlie Xue"
+              about="Member"
+            />
+            <Card
+              name="Kashish Arora"
+              about="Member"
+            />
+            <Card
+              name="Rajveer Dharkar"
+              about="Member"
+            />
+            <Card
+              name="Arjun Mehan"
+              about="Member"
+            />
+          </div>
         </div>
 
         <div className="py-5">
