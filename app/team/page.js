@@ -49,7 +49,7 @@ export default function Team() {
             about="Hackathon Lead"
           />
           <Card
-            name="Placeholder"
+            name="Kashish Arora"
             about="Hackathon Lead"
           />
         </div>
