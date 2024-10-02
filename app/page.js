@@ -20,10 +20,26 @@ export default function Home() {
           <div className="text-xl font-bold">HSN Hacks</div>
         </div>
         <ul className="flex gap-4">
-          <li><a className="hover:text-gray-400" href="/">Home</a></li>
-          <li><a className="hover:text-gray-400" href="/more-info">FAQ</a></li>
-          <li><a className="hover:text-gray-400" href="/team">Our Team</a></li>
-          <li><a className="hover:text-gray-400" href="/sponsorships">Sponsors</a></li>
+          <li>
+            <a className="hover:text-gray-400" href="/">
+              Home
+            </a>
+          </li>
+          <li>
+            <a className="hover:text-gray-400" href="/more-info">
+              FAQ
+            </a>
+          </li>
+          <li>
+            <a className="hover:text-gray-400" href="/team">
+              Our Team
+            </a>
+          </li>
+          <li>
+            <a className="hover:text-gray-400" href="/sponsorships">
+              Sponsors
+            </a>
+          </li>
         </ul>
       </nav>
     );
@@ -42,21 +58,22 @@ export default function Home() {
 
         <div className="text-3xl flex flex-row font-mono z-10">
           <div className="flex-1 text-center">
-            <p>When: TBD</p>
+            <p>
+              When: October 20 <br></br> 8am to 8pm
+            </p>
           </div>
           <div className="flex-1 text-center">
-            <p>What: 24 hour in-person Highschooler hackathon</p>
+            <p>What: 1-day in-person hackathon for middle and high schoolers</p>
           </div>
           <div className="flex-1 text-center">
-            <p>Where: WW-P HSN</p>
+            <p>Where: WW-P High School North</p>
           </div>
         </div>
 
-        <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-00 lg:grid-cols-4 lg:text-left">
+        <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-00 lg:grid-cols-5 lg:text-left">
           <a
             href="/more-info"
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-            target="_blank"
             rel="noopener noreferrer"
           >
             <h2 className={`mb-3 text-2xl font-semibold`}>
@@ -71,27 +88,25 @@ export default function Home() {
           </a>
 
           <a
-            href="https://discord.gg/ZdkuxQhPUh"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe2fPYfUYEG-6bziI_BejrhoOyQfn4ff2hDg0y7QAU9imfeSg/viewform"
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
             target="_blank"
             rel="noopener noreferrer"
           >
             <h2 className={`mb-3 text-2xl font-semibold`}>
-              Discord Server{" "}
+              Registration Form{" "}
               <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                 -&gt;
               </span>
             </h2>
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              Join our Discord for new announcements and a direct line of
-              communication
+              Register now to secure your spot.
             </p>
           </a>
 
           <a
             href="/team"
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
             rel="noopener noreferrer"
           >
             <h2 className={`mb-3 text-2xl font-semibold`}>
@@ -108,7 +123,6 @@ export default function Home() {
           <a
             href="/sponsorships"
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
             rel="noopener noreferrer"
           >
             <h2 className={`mb-3 text-2xl font-semibold`}>
@@ -119,6 +133,16 @@ export default function Home() {
             </h2>
             <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
               See the incredible organizations supporting our mission
+            </p>
+          </a>
+
+          <a
+            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            rel="noopener noreferrer"
+          >
+            <h2 className={`mb-3 text-2xl font-semibold`}>Google Classroom </h2>
+            <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
+              Join our Google Classroom with the code <b>32txdlk</b>.
             </p>
           </a>
         </div>
