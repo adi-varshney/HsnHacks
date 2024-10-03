@@ -67,8 +67,14 @@ export default function Team() {
           <h2 className="text-4xl">Leads</h2>
         </div>
         <div className="flex flex-wrap justify-center">
-          <Card name="Alex Wang" about="Hackathon Lead" />
-          <Card name="Kashish Arora" about="Hackathon Lead" />
+          <Card
+            name="Alex Wang"
+            about="Hackathon Director"
+          />
+          <Card
+            name="Kashish Arora"
+            about="Hackathon Director"
+          />
         </div>
 
         <div className="py-5">
@@ -76,14 +82,27 @@ export default function Team() {
             <h2 className="text-4xl">Logistics</h2>
           </div>
           <div className="flex flex-wrap justify-center">
-            <Card name="Akshat Mehta" about="Department Leader" />
-            <Card name="Alex Wang" about="Department Leader" />
+            <Card
+              name="Akshat Mehta"
+              about="Department Leader"
+            />
             <div className="w-full"></div>
-            <Card name="Prathyush Yeturi" about="Member" />
-            <Card name="Charlie Xue" about="Member" />
-            <Card name="Kashish Arora" about="Member" />
-            <Card name="Rajveer Dharkar" about="Member" />
-            <Card name="Arjun Mehan" about="Member" />
+            <Card
+              name="Prathyush Yeturi"
+              about="Member"
+            />
+            <Card
+              name="Charlie Xue"
+              about="Member"
+            />
+            <Card
+              name="Rajveer Dharkar"
+              about="Member"
+            />
+            <Card
+              name="Arjun Mehan"
+              about="Member"
+            />
           </div>
         </div>
 
@@ -94,10 +113,18 @@ export default function Team() {
           <div className="flex flex-wrap justify-center">
             <Card name="Audrey Chen" about="Department Director" />
             <div className="w-full"></div>
-            <Card name="Prathyush Yeturi" about="Member" />
-            <Card name="Claire Cheng" about="Member" />
-            <Card name="Kashish Arora" about="Member" />
-            <Card name="Rajveer Dharkar" about="Member" />
+            <Card
+              name="Prathyush Yeturi"
+              about="Member"
+            />
+            <Card
+              name="Claire Cheng"
+              about="Member"
+            />
+            <Card
+              name="Rajveer Dharkar"
+              about="Member"
+            />
           </div>
         </div>
 
@@ -108,8 +135,18 @@ export default function Team() {
           <div className="flex flex-wrap justify-center">
             <Card name="Aliza Borker" about="Department Director" />
             <div className="w-full"></div>
-            <Card name="Anvitha Komarraju" about="Member" />
-            <Card name="Simrun Sabhlok" about="Member" />
+            <Card
+              name="Anvitha Komarraju"
+              about="Member"
+            />
+            <Card
+              name="Sally Mundia"
+              about="Member"
+            />
+            <Card
+              name="Simrun Sabhlok"
+              about="Member"
+            />
           </div>
         </div>
 
@@ -120,8 +157,14 @@ export default function Team() {
           <div className="flex flex-wrap justify-center">
             <Card name="Adikesh Nathan" about="Department Director" />
             <div className="w-full"></div>
-            <Card name="Simrun Sabhlok" about="Member" />
-            <Card name="Pragnya Goteti" about="Member" />
+            <Card
+              name="Riddhi Ganesh"
+              about="Member"
+            />
+            <Card
+              name="Pragnya Goteti"
+              about="Member"
+            />
           </div>
         </div>
       </div>
