@@ -24,19 +24,21 @@ export default function Team() {
         <div className="text-center justify-center">
           <h1 className="text-6xl">Meet our Sponsors</h1>
         </div>
-        <div className="flex text-center justify-center mb-12">
-          <img src="/prizes.gif" alt="CS Club" className="h-16 w-auto ml-4" />
-        </div>
+        <br></br>
         <div className="text-center">
-          <h3 className="text-4xl mb-5">Gold Sponsors</h3>
-          <h3 className="text-2xl mb-5">Coming Soon</h3>
-          <h3 className="text-4xl mb-5">Silver Sponsors</h3>
-          <h3 className="text-2xl mb-5">Coming Soon</h3>
-          <h3 className="text-4xl mb-5">Bronze Sponsors</h3>
-          <h3 className="text-2xl mb-5">Coming Soon</h3>
-
+          <div className="flex justify-center space-x-8">
+            <a href="https://www.partycity.com/" target="_blank">
+              <img src="/partycity.png" alt="Party City" className="h-32 w-auto" />
+            </a>
+            <a href="https://artofproblemsolving.com/" target="_blank">
+              <img src="/aops.png" alt="AOPS" className="h-32 w-auto" />
+            </a>
+            <a href="https://gen.xyz/" target="_blank">
+              <img src="/xyz.jpeg" alt="XYZ Domains" className="h-32 w-auto" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  )
+  )  
 }

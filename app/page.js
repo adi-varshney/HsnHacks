@@ -63,7 +63,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex-1 text-center">
-            <p>What: 1-day in-person hackathon for middle and high schoolers</p>
+            <p>What: First-Ever <br></br> WWP Hackathon</p>
           </div>
           <div className="flex-1 text-center">
             <p>Where: WW-P High School North</p>
