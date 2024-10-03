@@ -121,7 +121,7 @@ export default function Team() {
             <Card name="Adikesh Nathan" about="Department Director" />
             <div className="w-full"></div>
             <Card name="Simrun Sabhlok" about="Member" />
-            <Card name="Pragnaya Goteti" about="Member" />
+            <Card name="Pragnya Goteti" about="Member" />
           </div>
         </div>
       </div>
