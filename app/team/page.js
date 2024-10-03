@@ -135,6 +135,10 @@ export default function Team() {
               about="Member"
             />
             <Card
+              name="Sally Mundia"
+              about="Member"
+            />
+            <Card
               name="Simrun Sabhlok"
               about="Member"
             />
@@ -156,7 +160,11 @@ export default function Team() {
               about="Member"
             />
             <Card
-              name="Pragnaya Goteti"
+              name="Riddhi Ganesh"
+              about="Member"
+            />
+            <Card
+              name="Pragnya Goteti"
               about="Member"
             />
           </div>
