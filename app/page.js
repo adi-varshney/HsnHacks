@@ -100,7 +100,7 @@ export default function Home() {
               </span>
             </h2>
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              Register now to secure your spot.
+              Register now to secure your spot
             </p>
           </a>
 
@@ -142,7 +142,7 @@ export default function Home() {
           >
             <h2 className={`mb-3 text-2xl font-semibold`}>Google Classroom </h2>
             <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-              Join our Google Classroom with the code <b>32txdlk</b>.
+              Join our Google Classroom with the code <b>32txdlk</b>
             </p>
           </a>
         </div>

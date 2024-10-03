@@ -18,7 +18,7 @@ const generalFaqData = [
   {
     question: "Where can I find an event schedule?",
     answer:
-      "An event schedule will be released shortly in the coming weeks. It will be available on our Discord Server. Join using the link on the homepage.",
+      "An event schedule will be released shortly in the coming weeks. It will be available on our Google Classroom. Join using the link on the homepage.",
   },
   {
     question: "What will I build? ",
@@ -56,7 +56,7 @@ const teamsFaqData = [
   },
   {
     question: "How will teams work?",
-    answer: "We have two sections, middle school and high school. If you show up with a team, you can compete with them. If not, we can put you in a team with the section you're in.",
+    answer: "We have two sections, beginner and advanced. If you show up with a team, you can compete with them. If not, we can put you in a team with the section you're in.",
   },
   {
     question: "Are you required to have a team to register? ",
@@ -82,7 +82,7 @@ const logisticsFaqData = [
   {
     question: "Do I need to fill any forms?",
     answer:
-      "Yes, please join the Discord Server; it contains the required forms and registration process. It's on the home page. ",
+      "Yes, please fill out the registration form on the home page and join the Google Classroom. ",
   },
 ];
 
@@ -93,13 +93,12 @@ const judgesFaqData = [
   },
   {
     question: "Who are the judges?",
-    answer: "Our judges are distinguished people from many places! They include Ms. Kelly Vostal, a computer science teacher at our school, Aneetha " + 
-    "Thokkadam, a CS student at Georgie Tech, and Abul Khair, a lead architect at Intellect, Inc.",
+    answer: "Our judges include distinguished CS professionals and past alumini. ",
   },
   {
     question: "How will they grade projects?",
     answer:
-      "Judges will use a rubric to grade projects. They will be given to everyone before the hackathon via our Discord Server.",
+      "Judges will use a rubric to grade projects. They will be given to everyone before the hackathon via our Google Classroom.",
   },
 ];
 
