@@ -11,9 +11,11 @@ const Accordion = ({ question, answer }) => {
         className="w-full py-4 text-left focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <h3 className="text-lg font-medium ml-2 hover:underline">{question}</h3>
+        <h3 className="text-lg font-medium ml-2 hover:underline text-white">
+          {question}
+        </h3>
       </button>
-      {isOpen && <p className="px-4 pb-4">{answer}</p>}
+      {isOpen && <p className="px-4 pb-4 text-g text-slate-50">{answer}</p>}
     </div>
   );
 };
