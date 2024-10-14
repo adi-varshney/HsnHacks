@@ -22,7 +22,7 @@ const generalFaqData = [
   },
   {
     question: "What will I build? ",
-    answer: "Build an app, website, or any sort of software that addresses our theme of criminal justice."
+    answer: "Build an app, website, or any sort of software that addresses our theme of social justice."
   },
   {
     question: "How will I submit?",
