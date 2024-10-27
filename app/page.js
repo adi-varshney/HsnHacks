@@ -36,6 +36,11 @@ export default function Home() {
             </a>
           </li>
           <li>
+            <a className="hover:text-gray-400" href="/workshops">
+              Workshops
+            </a>
+          </li>
+          <li>
             <a className="hover:text-gray-400" href="/sponsorships">
               Sponsors
             </a>
