@@ -37,6 +37,9 @@ export default function Team() {
             <a href="https://gen.xyz/" target="_blank">
               <img src="/xyz.jpeg" alt="XYZ Domains" className="h-32 w-auto" />
             </a>
+            <a href="https://www.janestreet.com/" target="_blank">
+              <img src="/jane-street.png" alt="Jane Street" className="h-32 w-auto" />
+            </a>
           </div>
         </div>
       </div>
