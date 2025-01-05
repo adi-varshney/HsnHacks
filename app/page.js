@@ -2,6 +2,24 @@
 
 import { useState, useEffect } from "react";
 
+const NavBar = () => {
+  return (
+    <nav className="flex justify-between items-center p-4 bg-gray-800 text-white">
+      <div className="flex items-center">
+        <img src="../favicon.ico" alt="favicon" className="w-9 h-9 mr-2" />
+        <div className="text-xl font-bold">HSN Hacks</div>
+      </div>
+      <ul className="flex gap-4">
+        <li><a className="hover:text-gray-400" href="/">Home</a></li>
+        <li><a className="hover:text-gray-400" href="/more-info">FAQ</a></li>
+        <li><a className="hover:text-gray-400" href="/team">Our Team</a></li>
+        <li><a className="hover:text-gray-400" href="/workshops">Workshops</a></li>
+        <li><a className="hover:text-gray-400" href="/sponsorships">Sponsors</a></li>
+      </ul>
+    </nav>
+  );
+};
+
 export default function Home() {
   const [typedChar, setTypedChar] = useState(0);
 
@@ -12,23 +30,7 @@ export default function Home() {
     return () => clearInterval(intervalId);
   }, []);
 
-  const NavBar = () => {
-    return (
-      <nav className="flex justify-between items-center p-4 bg-gray-800 text-white">
-        <div className="flex items-center">
-          <img src="../favicon.ico" alt="favicon" className="w-9 h-9 mr-2" />
-          <div className="text-xl font-bold">HSN Hacks</div>
-        </div>
-        <ul className="flex gap-4">
-          <li><a className="hover:text-gray-400" href="/">Home</a></li>
-          <li><a className="hover:text-gray-400" href="/more-info">FAQ</a></li>
-          <li><a className="hover:text-gray-400" href="/team">Our Team</a></li>
-          <li><a className="hover:text-gray-400" href="/workshops">Workshops</a></li>
-          <li><a className="hover:text-gray-400" href="/sponsorships">Sponsors</a></li>
-        </ul>
-      </nav>
-    );
-  };
+
 
   return (
     <div>
@@ -44,7 +46,7 @@ export default function Home() {
         <div className="text-3xl flex flex-row font-mono z-10">
           <div className="flex-1 text-center">
             <p>
-              When: October 20 <br></br> 8am to 8pm
+              When: 1/18 <br></br> 8am to 4pm
             </p>
           </div>
           <div className="flex-1 text-center">
