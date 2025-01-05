@@ -21,7 +21,7 @@ export default function Home() {
         </div>
         <ul className="flex gap-4">
           <li><a className="hover:text-gray-400" href="/">Home</a></li>
-          <li><a className="hover:text-gray-400" href="/more-info/page.js">FAQ</a></li>
+          <li><a className="hover:text-gray-400" href="/more-info">FAQ</a></li>
           <li><a className="hover:text-gray-400" href="/team">Our Team</a></li>
           <li><a className="hover:text-gray-400" href="/workshops">Workshops</a></li>
           <li><a className="hover:text-gray-400" href="/sponsorships">Sponsors</a></li>
