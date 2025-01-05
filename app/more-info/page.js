@@ -9,7 +9,7 @@ const generalFaqData = [
   {
     question: "When is HSN Hacks?",
     answer:
-      "October 20 from 8 AM to 8 PM",
+      "Jan 18th from 8 AM to 4 PM",
   },
   {
     question: "Is this hackathon purely coding-based?",
@@ -18,7 +18,7 @@ const generalFaqData = [
   {
     question: "Where can I find an event schedule?",
     answer:
-      "An event schedule will be released shortly in the coming weeks. It will be available on our Google Classroom. Join using the link on the homepage.",
+      "An event schedule has been released it is available on our Google Classroom. Join using the link on the homepage.",
   },
   {
     question: "What will I build? ",
@@ -35,7 +35,7 @@ const generalFaqData = [
   },
   {
     question: "Is food provided?",
-    answer: "Two slices of pizza per person for lunch will be provided. Breakfast and dinner will not be provided. Participants also are free to bring their own food and snacks.",
+    answer: "Two slices of pizza per person for lunch will be provided. Breakfast and dinner will not be provided. Participants also are free to bring their own food and snacks. Snacks such as chips will be provided aswell.",
   },
   {
     question: "Is this hackathon purely coding-based?",
@@ -47,7 +47,7 @@ const teamsFaqData = [
   {
     question: "Who is eligible to participate?",
     answer:
-      "HSN Hacks is strictly for highschoolers and middle schoolers. College students will not be allowed to attend. ",
+      "HSN Hacks is strictly for West Windsor Plainsboro highschoolers and middle schoolers. ",
   },
   {
     question: "What if I've never coded before?",
@@ -56,7 +56,7 @@ const teamsFaqData = [
   },
   {
     question: "How will teams work?",
-    answer: "We have two sections, beginner and advanced. If you show up with a team, you can compete with them. If not, we can put you in a team with the section you're in.",
+    answer: "Each team can have anywhere from 1-3 members. If you show up with a team, you can compete with them. If not, we can put you in a team.",
   },
   {
     question: "Are you required to have a team to register? ",
@@ -77,7 +77,7 @@ const logisticsFaqData = [
   },
   {
     question: "Do I have to stay for the full event?",
-    answer: "Yes, you must stay for the full event. ",
+    answer: "Yes, you must stay for the full event. You cannot leave half way through the event. ",
   },
   {
     question: "Do I need to fill any forms?",
@@ -104,8 +104,8 @@ const judgesFaqData = [
 
 const prizesFaqData = [
   {
-    question: "What are the prizes?",
-    answer: "Prizes will vary from gift cards to textbooks. ",
+    question: "Are there prizes?",
+    answer: "Prizes will be given out to the top three teams out of a cash pool of $300. ",
   },
   {
     question: "Are there participation awards?",
