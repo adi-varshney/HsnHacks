@@ -53,19 +53,19 @@ export default function Team() {
                     <div className="max-w-2xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-4">
                         <div className="p-7">
                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                Web Dev Beginner
+                                Python Beginner
                             </h5>
                             <ul className="list-disc ml-8 text-left">
                                 <li>Python setup, printing, input</li>
                                 <li>Data types, conditionals, functions, loops</li>
-                                <li>Enough information to prepare for ML workshops</li>
+                                <li>Enough information for ML workshops</li>
                             </ul>
 
                             <h3 className="text-xl font-semibold mt-4">HTML</h3>
                             <ul className="list-disc ml-8 text-left">
                                 <li>Basics of HTML</li>
                                 <li>Simple tags and page layout</li>
-                                <li>Enough information to make simple websites</li>
+                                <li>Enough information to make simple websites and React workshop</li>
                             </ul>
                         </div>
                     </div>
