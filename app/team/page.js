@@ -103,6 +103,10 @@ export default function Team() {
               about="Member"
             />
             <Card
+              name="Hira Usman"
+              about="Member"
+            />
+            <Card
               name="Claire Cheng"
               about="Member"
             />
