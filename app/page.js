@@ -66,9 +66,9 @@ export default function Home() {
               </h1>
             </div>
             <p className="max-w-xl text-lg text-slate-300">
-              Twenty-four hours of building, shipping, and pitching software that
-              tackles real community problems. Assemble your crew or arrive solo—
-              mentors, workshops, food, and swag are all lined up.
+              Eight hours of building, shipping, and pitching software that tackles
+              real community problems. Assemble your crew or arrive solo—mentors,
+              workshops, food, and swag are all lined up.
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <a
@@ -103,7 +103,15 @@ export default function Home() {
                 <p className="text-xs uppercase tracking-[0.35em] text-slate-500">
                   When
                 </p>
-                <p className="mono-display text-2xl text-white">January 18 · 8 AM - 4 PM</p>
+                <p className="mono-display text-2xl text-white">
+                  January 31 · 8 AM - 4 PM
+                </p>
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-[0.35em] text-slate-500">
+                  Snow Date
+                </p>
+                <p className="mono-display text-xl text-white">February 7</p>
               </div>
               <div>
                 <p className="text-xs uppercase tracking-[0.35em] text-slate-500">

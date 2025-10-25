@@ -10,7 +10,7 @@ const generalFaqData = [
   {
     question: "When and where is the event?",
     answer:
-      "HSN Hacks takes place on January 18 from 8:00 AM to 4:00 PM at West Windsor-Plainsboro High School North.",
+      "HSN Hacks takes place on January 31 from 8:00 AM to 4:00 PM at West Windsor-Plainsboro High School North. Our snow date is February 7 at the same time and location.",
   },
   {
     question: "What is the theme for 2025?",
