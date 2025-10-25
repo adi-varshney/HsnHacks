@@ -1,21 +1,7 @@
+import Image from "next/image";
+import NavBar from "../_components/NavBar";
+
 export default function Team() {
-  const NavBar = () => {
-    return (
-      <nav className="flex justify-between items-center p-4 bg-gray-800 text-white">
-        <div className="flex items-center">
-          <img src="../favicon.ico" alt="favicon" className="w-9 h-9 mr-2" />
-          <div className="text-xl font-bold">HSN Hacks</div>
-        </div>
-        <ul className="flex gap-4">
-          <li><a className="hover:text-gray-400" href="/">Home</a></li>
-          <li><a className="hover:text-gray-400" href="/more-info">FAQ</a></li>
-          <li><a className="hover:text-gray-400" href="/team">Our Team</a></li>
-          <li><a className="hover:text-gray-400" href="/workshops">Workshops</a></li>
-          <li><a className="hover:text-gray-400" href="/sponsorships">Sponsors</a></li>
-        </ul>
-      </nav>
-    );
-  };
 
   const Card = ({ name, about }) => {
     return (
@@ -39,13 +25,23 @@ export default function Team() {
       <NavBar />
       <div className="text-center">
         <div className="text-center mb-12 flex justify-center items-center py-5">
-          <img
+          <Image
             src="/girlsWhoCode.png"
             alt="Girls Who Code"
+            width={256}
+            height={64}
             className="h-16 w-auto mr-4"
+            priority
           />
           <h1 className="text-6xl">Meet the Team</h1>
-          <img src="/CsClub.png" alt="CS Club" className="h-16 w-auto ml-4" />
+          <Image
+            src="/CsClub.png"
+            alt="CS Club"
+            width={256}
+            height={64}
+            className="h-16 w-auto ml-4"
+            priority
+          />
         </div>
 
         <div className="text-center mb-8">

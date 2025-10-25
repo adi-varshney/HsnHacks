@@ -1,24 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-
-const NavBar = () => {
-  return (
-    <nav className="flex justify-between items-center p-4 bg-gray-800 text-white">
-      <div className="flex items-center">
-        <img src="../favicon.ico" alt="favicon" className="w-9 h-9 mr-2" />
-        <div className="text-xl font-bold">HSN Hacks</div>
-      </div>
-      <ul className="flex gap-4">
-        <li><a className="hover:text-gray-400" href="/">Home</a></li>
-        <li><a className="hover:text-gray-400" href="/more-info">FAQ</a></li>
-        <li><a className="hover:text-gray-400" href="/team">Our Team</a></li>
-        <li><a className="hover:text-gray-400" href="/workshops">Workshops</a></li>
-        <li><a className="hover:text-gray-400" href="/sponsorships">Sponsors</a></li>
-      </ul>
-    </nav>
-  );
-};
+import NavBar from "./_components/NavBar";
 
 export default function Home() {
   const [typedChar, setTypedChar] = useState(0);
