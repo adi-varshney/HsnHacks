@@ -15,6 +15,7 @@ const departments = [
     description: "Coordinating venue operations, check-in, judging, and day-of flow.",
     members: [
       { name: "Rajveer Dharkar", role: "Department Leader" },
+      { name: "Adi Varshney", role: "Member" },
       { name: "Kavin Muthiah", role: "Member" },
       { name: "Samuel Holt", role: "Member" },
       { name: "Ishaan Indukuri", role: "Member" },
