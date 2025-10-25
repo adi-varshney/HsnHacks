@@ -29,7 +29,7 @@ const workshops = [
   {
     title: "Python Beginner",
     summary:
-      "Start coding from scratch and pick up the fundamentals you’ll use everywhere.",
+      "Start coding from scratch and pick up the fundamentals you&apos;ll use everywhere.",
     sections: [
       {
         heading: "Essentials",
@@ -73,14 +73,14 @@ export default function WorkshopsPage() {
       <NavBar />
       <main className="mx-auto flex w-full max-w-6xl flex-col gap-16 px-6 py-16">
         <header className="space-y-6 text-center">
-          <p className="text-sm uppercase tracking-[0.35em] text-cyan-300">
+          <span className="mx-auto inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-[rgba(12,16,28,0.85)] px-5 py-2 text-xs uppercase tracking-[0.4em] text-cyan-200">
             Skill-Building Tracks
-          </p>
+          </span>
           <h1 className="text-4xl font-semibold text-white sm:text-5xl">
             Workshops to level up every hacker
           </h1>
-          <p className="mx-auto max-w-3xl text-base text-slate-300">
-            Whether you’re building your first website or shipping a machine
+          <p className="mx-auto max-w-3xl text-base text-slate-300/90">
+            Whether you&apos;re building your first website or shipping a machine
             learning model, our mentor-led sessions are designed to get you hacking
             faster. Each workshop is paced so you can follow along live and apply it
             directly to your project.
@@ -91,14 +91,15 @@ export default function WorkshopsPage() {
           {workshops.map((workshop) => (
             <div
               key={workshop.title}
-              className="glass-card border-white/10 bg-white/5 p-8"
+              className="glass-card relative overflow-hidden border-cyan-400/10 bg-[rgba(7,10,18,0.85)] p-8"
             >
+              <span className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-cyan-400/60 to-transparent" />
               <h2 className="text-2xl font-semibold text-white">{workshop.title}</h2>
-              <p className="mt-3 text-sm text-slate-300">{workshop.summary}</p>
+              <p className="mt-3 text-sm text-slate-300/90">{workshop.summary}</p>
               <div className="mt-6 space-y-6">
                 {workshop.sections.map((section) => (
                   <div key={section.heading}>
-                    <p className="text-xs uppercase tracking-[0.3em] text-cyan-300">
+                    <p className="text-xs uppercase tracking-[0.3em] text-cyan-300/80">
                       {section.heading}
                     </p>
                     <ul className="mt-2 space-y-2 text-sm text-slate-200">

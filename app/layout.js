@@ -20,10 +20,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${spaceMono.variable} bg-transparent font-sans antialiased`}
+        className={`${inter.variable} ${spaceMono.variable} bg-[#010205] font-sans antialiased`}
       >
-        <div className="min-h-screen bg-[#030712]/80">{children}</div>
-        <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(0,204,255,0.12),_transparent_55%),radial-gradient(circle_at_bottom,_rgba(168,85,247,0.1),_transparent_45%)] blur-3xl" />
+        <div className="relative min-h-screen bg-[rgba(1,2,5,0.95)]">
+          <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_10%_15%,rgba(14,165,233,0.18),transparent_55%),radial-gradient(circle_at_90%_10%,rgba(56,189,248,0.16),transparent_55%),radial-gradient(circle_at_50%_90%,rgba(2,132,199,0.12),transparent_60%)] opacity-80 blur-3xl" />
+          <div className="pointer-events-none absolute inset-0 -z-20 bg-[linear-gradient(135deg,rgba(12,13,23,0.6)_0%,rgba(1,2,5,0.9)_40%,rgba(1,1,3,0.95)_100%)]" />
+          {children}
+        </div>
       </body>
     </html>
   );

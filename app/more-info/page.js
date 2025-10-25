@@ -46,7 +46,7 @@ const teamsFaqData = [
       "HSN Hacks is strictly for West Windsor Plainsboro highschoolers and middle schoolers. ",
   },
   {
-    question: "What if I've never coded before?",
+    question: "What if I&apos;ve never coded before?",
     answer:
       "You do not need any prior coding experience. This is a great way to get introduced to programming. Workshops will help you get started with the basics.",
   },
@@ -79,7 +79,7 @@ const logisticsFaqData = [
   {
     question: "Do I have to come to workshops?",
     answer:
-      "No, you do not have to come to workshops. However, it's highly recommended.",
+      "No, you do not have to come to workshops. However, it&apos;s highly recommended.",
   },
   {
     question: "Do I have to stay for the full event?",
@@ -173,13 +173,13 @@ const FAQ = () => {
       <NavBar />
       <main className="mx-auto flex w-full max-w-6xl flex-col gap-16 px-6 py-16">
         <header className="space-y-6 text-center">
-          <p className="text-sm uppercase tracking-[0.35em] text-cyan-300">
-            Frequently Asked Questions
-          </p>
+          <span className="mx-auto inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-[rgba(12,16,28,0.85)] px-5 py-2 text-xs uppercase tracking-[0.4em] text-cyan-200">
+            FAQ Uplink
+          </span>
           <h1 className="text-4xl font-bold text-white sm:text-5xl">
             Everything you need to know before launch day
           </h1>
-          <p className="mx-auto max-w-3xl text-base text-slate-300">
+          <p className="mx-auto max-w-3xl text-base text-slate-300/90">
             We pulled together the most common questions about logistics, judging,
             prizes, and how to prepare. Still unsure about something? Reach out to
             the CS Club organizers and we will get you squared away.
@@ -188,7 +188,11 @@ const FAQ = () => {
 
         <section className="grid gap-8 lg:grid-cols-2">
           {faqSections.map((section) => (
-            <div key={section.title} className="glass-card p-8">
+            <div
+              key={section.title}
+              className="glass-card relative overflow-hidden border-cyan-400/10 bg-[rgba(7,10,18,0.85)] p-8"
+            >
+              <span className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-cyan-400/60 to-transparent" />
               <h2 className="mb-4 text-2xl font-semibold text-white">
                 {section.title}
               </h2>
