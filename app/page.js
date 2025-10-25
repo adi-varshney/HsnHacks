@@ -36,7 +36,7 @@ export default function Home() {
     {
       title: "Google Classroom",
       description: "Join with the code",
-      code: "32txdlk",
+      code: "-------",
     },
   ];
 
@@ -105,7 +105,7 @@ export default function Home() {
                   When
                 </p>
                 <p className="mono-display text-2xl text-accent">
-                  January 31 &middot; 8 AM - 4 PM
+                  January 31 &middot; 8AM - 4PM
                 </p>
               </div>
               <div>
@@ -127,7 +127,7 @@ export default function Home() {
                   Theme
                 </p>
                 <p className="mono-display text-2xl text-accent">
-                  Revealed live at kickoff
+                  Revealed Live!
                 </p>
               </div>
             </div>
