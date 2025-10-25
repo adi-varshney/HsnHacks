@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import NavBar from "../_components/NavBar";
 
 const departments = [
@@ -67,13 +67,13 @@ export default function Team() {
             />
           </div>
           <div className="space-y-4">
-            <span className="inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-[rgba(12,16,28,0.85)] px-5 py-2 text-xs uppercase tracking-[0.4em] text-cyan-200">
+            <span className="chip inline-flex items-center gap-2 px-5 py-2 text-xs uppercase tracking-[0.4em]">
               Organizing Crew
             </span>
-            <h1 className="text-4xl font-semibold text-white sm:text-5xl">
+            <h1 className="text-4xl font-semibold sm:text-5xl">
               Meet the students building HSN Hacks
             </h1>
-            <p className="text-base text-slate-300 md:max-w-xl">
+            <p className="text-muted text-base md:max-w-xl">
               From securing sponsors to crafting workshops, this cross-club team
               from the CS Club and Girls Who Code is orchestrating every detail to
               make our second hackathon even more unforgettable.
@@ -93,19 +93,16 @@ export default function Team() {
 
         <section className="grid gap-10">
           {departments.map((dept) => (
-            <div
-              key={dept.name}
-              className="glass-card relative overflow-hidden border-cyan-400/10 bg-[rgba(7,10,18,0.85)] p-6 sm:p-8"
-            >
+            <div key={dept.name} className="glass-card relative overflow-hidden p-6 sm:p-8">
               <span className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-cyan-400/60 to-transparent" />
               <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                 <div>
-                  <h2 className="text-3xl font-semibold text-white">{dept.name}</h2>
-                  <p className="mt-2 max-w-2xl text-sm text-slate-300/90">
+                  <h2 className="text-3xl font-semibold">{dept.name}</h2>
+                  <p className="mt-2 max-w-2xl text-sm text-muted">
                     {dept.description}
                   </p>
                 </div>
-                <div className="rounded-full border border-cyan-400/30 bg-[rgba(10,14,24,0.85)] px-4 py-2 text-xs uppercase tracking-[0.3em] text-cyan-200">
+                <div className="chip px-4 py-2 text-xs uppercase tracking-[0.3em]">
                   {dept.members.length} members
                 </div>
               </div>
@@ -114,12 +111,12 @@ export default function Team() {
                 {dept.members.map((member) => (
                   <div
                     key={member.name}
-                    className="rounded-2xl border border-cyan-400/15 bg-[rgba(5,7,14,0.9)] p-5 shadow-[0_0_25px_rgba(14,165,233,0.08)]"
+                    className="panel-strong p-5"
                   >
-                    <h3 className="text-lg font-semibold text-white">
+                    <h3 className="text-lg font-semibold">
                       {member.name}
                     </h3>
-                    <p className="text-sm text-cyan-200">{member.role}</p>
+                    <p className="text-sm text-accent">{member.role}</p>
                   </div>
                 ))}
               </div>
@@ -130,3 +127,4 @@ export default function Team() {
     </div>
   );
 }
+
