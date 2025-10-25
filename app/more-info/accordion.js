@@ -6,16 +6,23 @@ const Accordion = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b-2 border-gray-200">
+    <div className="border-b border-white/10">
       <button
-        className="w-full py-4 text-left focus:outline-none"
+        className="flex w-full items-center justify-between py-4 text-left text-slate-100 transition hover:text-cyan-200 focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <h3 className="text-lg font-medium ml-2 hover:underline text-white">
-          {question}
-        </h3>
+        <h3 className="text-lg font-medium">{question}</h3>
+        <span
+          className={`text-cyan-300 transition-transform duration-200 ${
+            isOpen ? "rotate-45" : ""
+          }`}
+        >
+          +
+        </span>
       </button>
-      {isOpen && <p className="px-4 pb-4 text-g text-slate-50">{answer}</p>}
+      {isOpen && (
+        <p className="pb-6 text-sm text-slate-300 md:text-base">{answer}</p>
+      )}
     </div>
   );
 };

@@ -114,78 +114,52 @@ const prizesFaqData = [
   },
 ];
 
+const faqSections = [
+  { title: "General FAQ", data: generalFaqData },
+  { title: "Registration & Teams", data: teamsFaqData },
+  { title: "Logistics", data: logisticsFaqData },
+  { title: "Judging", data: judgesFaqData },
+  { title: "Prizes", data: prizesFaqData },
+];
+
 const FAQ = () => {
   return (
-    <div>
+    <div className="pb-24">
       <NavBar />
-      <div className="max-w-3xl mx-auto px-4 py-8">
-        <main>
-          <div className="mb-10">
-            <h1 className="text-3xl font-bold mb-4">General FAQ</h1>
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-              {generalFaqData.map((item, index) => (
-                <Accordion
-                  key={index}
-                  question={item.question}
-                  answer={item.answer}
-                />
-              ))}
-            </div>
-          </div>
+      <main className="mx-auto flex w-full max-w-6xl flex-col gap-16 px-6 py-16">
+        <header className="space-y-6 text-center">
+          <p className="text-sm uppercase tracking-[0.35em] text-cyan-300">
+            Frequently Asked Questions
+          </p>
+          <h1 className="text-4xl font-bold text-white sm:text-5xl">
+            Everything you need to know before launch day
+          </h1>
+          <p className="mx-auto max-w-3xl text-base text-slate-300">
+            We pulled together the most common questions about logistics, judging,
+            prizes, and how to prepare. Still unsure about something? Reach out to
+            the CS Club organizers and we’ll get you squared away.
+          </p>
+        </header>
 
-          <div className="mb-10">
-            <h1 className="text-3xl font-bold mb-4">Registration/Teams FAQ</h1>
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-              {teamsFaqData.map((item, index) => (
-                <Accordion
-                  key={index}
-                  question={item.question}
-                  answer={item.answer}
-                />
-              ))}
+        <section className="grid gap-8 lg:grid-cols-2">
+          {faqSections.map((section) => (
+            <div key={section.title} className="glass-card p-8">
+              <h2 className="mb-4 text-2xl font-semibold text-white">
+                {section.title}
+              </h2>
+              <div>
+                {section.data.map((item) => (
+                  <Accordion
+                    key={item.question}
+                    question={item.question}
+                    answer={item.answer}
+                  />
+                ))}
+              </div>
             </div>
-          </div>
-
-          <div className="mb-10">
-            <h1 className="text-3xl font-bold mb-4">Logistics FAQ</h1>
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-              {logisticsFaqData.map((item, index) => (
-                <Accordion
-                  key={index}
-                  question={item.question}
-                  answer={item.answer}
-                />
-              ))}
-            </div>
-          </div>
-
-          <div className="mb-10">
-            <h1 className="text-3xl font-bold mb-4">Judges FAQ</h1>
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-              {judgesFaqData.map((item, index) => (
-                <Accordion
-                  key={index}
-                  question={item.question}
-                  answer={item.answer}
-                />
-              ))}
-            </div>
-          </div>
-
-          <div className="mb-10">
-            <h1 className="text-3xl font-bold mb-4">Prizes FAQ</h1>
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-              {prizesFaqData.map((item, index) => (
-                <Accordion
-                  key={index}
-                  question={item.question}
-                  answer={item.answer}
-                />
-              ))}
-            </div>
-          </div>
-        </main>
-      </div>
+          ))}
+        </section>
+      </main>
     </div>
   );
 };
