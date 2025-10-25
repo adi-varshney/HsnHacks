@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "./ThemeProvider";
+import { usePathname } from "next/navigation";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -13,6 +14,7 @@ const navItems = [
 ];
 
 export default function NavBar() {
+  const pathname = usePathname();
   const { theme, toggleTheme } = useTheme();
   const isDark = theme === "dark";
 
@@ -85,11 +87,18 @@ export default function NavBar() {
 
         <div className="flex items-center justify-between gap-2 md:hidden">
           <nav className="flex flex-1 flex-nowrap items-center gap-2 text-[0.7rem] font-medium whitespace-nowrap">
-            {navItems.map((item) => (
-              <Link key={item.href} href={item.href} className="nav-link relative">
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`nav-link relative ${isActive ? "nav-link-active" : ""}`}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
           </nav>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSe2fPYfUYEG-6bziI_BejrhoOyQfn4ff2hDg0y7QAU9imfeSg/viewform"
@@ -103,11 +112,18 @@ export default function NavBar() {
 
         <div className="hidden flex-1 items-center justify-between gap-6 md:flex">
           <nav className="flex flex-1 items-center justify-center gap-6 text-sm font-medium">
-            {navItems.map((item) => (
-              <Link key={item.href} href={item.href} className="nav-link relative">
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`nav-link relative ${isActive ? "nav-link-active" : ""}`}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
           </nav>
           <div className="flex items-center gap-4">
             <button

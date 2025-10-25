@@ -200,6 +200,15 @@ body::before {
     width: 100%;
   }
 
+  .nav-link-active::after {
+    width: 100%;
+    background: var(--accent-soft);
+  }
+
+  .nav-link-active {
+    color: var(--accent-soft);
+  }
+
   .chip {
     border: 1px solid var(--chip-border);
     background: var(--chip-bg);
