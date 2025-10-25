@@ -36,7 +36,7 @@ export default function Home() {
     {
       title: "Google Classroom",
       description: "Join with the code",
-      code: "32txdlk",
+      code: "-------",
     },
   ];
 
@@ -54,11 +54,11 @@ export default function Home() {
         <section className="grid gap-12 md:grid-cols-[1.25fr,0.75fr] md:items-center">
           <div className="space-y-10">
             <div className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs uppercase tracking-[0.35em] text-cyan-300">
-              High School North CS Club
+              HSN CS Club × Girls Who Code
             </div>
             <div className="space-y-6">
               <p className="text-sm uppercase tracking-[0.4em] text-slate-400">
-                2025 Hackathon
+                2026 Hackathon
               </p>
               <h1 className="mono-display text-4xl leading-tight text-white sm:text-6xl lg:text-7xl">
                 {"HSN Hacks".substring(0, typedChar)}
@@ -67,7 +67,9 @@ export default function Home() {
             </div>
             <p className="max-w-xl text-lg text-slate-300">
               Eight hours of building, shipping, and pitching software that tackles
-              real community problems. Assemble your crew or arrive solo—mentors,
+              real community problems. Hosted by the High School North CS Club in
+              partnership with our Girls Who Code chapter, HSN Hacks returns for its
+              second year welcoming both seasoned hackers and first timers—mentors,
               workshops, food, and swag are all lined up.
             </p>
             <div className="flex flex-wrap items-center gap-4">
@@ -104,7 +106,7 @@ export default function Home() {
                   When
                 </p>
                 <p className="mono-display text-2xl text-white">
-                  January 31 · 8 AM - 4 PM
+                  January 31, 8AM - 4PM
                 </p>
               </div>
               <div>
@@ -126,7 +128,7 @@ export default function Home() {
                   Theme
                 </p>
                 <p className="mono-display text-2xl text-white">
-                  Social Justice & Community Impact
+                  Revealed Live!
                 </p>
               </div>
             </div>

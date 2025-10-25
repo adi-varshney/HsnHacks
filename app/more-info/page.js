@@ -13,9 +13,9 @@ const generalFaqData = [
       "HSN Hacks takes place on January 31 from 8:00 AM to 4:00 PM at West Windsor-Plainsboro High School North. Our snow date is February 7 at the same time and location.",
   },
   {
-    question: "What is the theme for 2025?",
+    question: "When will the 2026 theme be announced?",
     answer:
-      "This year's theme is Social Justice & Community Impact. Projects should focus on empowering communities, improving access to resources, or solving social challenges.",
+      "We are keeping the theme under wraps until the morning of the hackathon. Expect a live reveal during opening ceremony to keep the playing field level for every team.",
   },
   {
     question: "What should I expect during the day?",

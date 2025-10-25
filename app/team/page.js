@@ -74,7 +74,8 @@ export default function Team() {
             </h1>
             <p className="text-base text-slate-300 md:max-w-xl">
               From securing sponsors to crafting workshops, this cross-club team
-              is orchestrating every detail to make our first hackathon unforgettable.
+              from the CS Club and Girls Who Code is orchestrating every detail to
+              make our second hackathon even more unforgettable.
             </p>
           </div>
           <div className="flex justify-center md:justify-start">
