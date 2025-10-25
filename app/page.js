@@ -60,9 +60,11 @@ export default function Home() {
               <p className="text-sm uppercase tracking-[0.4em] text-muted">
                 2026 Hackathon
               </p>
-              <h1 className="mono-display text-4xl leading-tight sm:text-6xl lg:text-7xl">
-                {"HSN Hacks".substring(0, typedChar)}
-                <span className="animate-pulse text-accent">|</span>
+              <h1 className="hero-title mono-display text-4xl leading-tight sm:text-6xl lg:text-7xl">
+                <span className="hero-title-text">
+                  {"HSN Hacks".substring(0, typedChar)}
+                </span>
+                <span className="hero-title-cursor text-accent">|</span>
               </h1>
             </div>
             <p className="text-muted max-w-xl text-lg">
