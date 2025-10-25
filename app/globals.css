@@ -3,57 +3,57 @@
 @tailwind utilities;
 
 :root {
-  --bg-color: #05060f;
-  --overlay-1: radial-gradient(circle at 15% 20%, rgba(59, 130, 246, 0.2), transparent 48%);
-  --overlay-2: radial-gradient(circle at 85% 15%, rgba(14, 165, 233, 0.24), transparent 52%);
-  --overlay-3: radial-gradient(circle at 50% 92%, rgba(8, 145, 178, 0.2), transparent 58%);
+  --bg-color: #000109;
+  --overlay-1: radial-gradient(circle at 16% 18%, rgba(24, 47, 109, 0.12), transparent 42%);
+  --overlay-2: radial-gradient(circle at 84% 14%, rgba(6, 68, 123, 0.12), transparent 46%);
+  --overlay-3: radial-gradient(circle at 52% 88%, rgba(12, 74, 110, 0.1), transparent 52%);
 
-  --text-primary: #e2e8f0;
-  --text-muted: rgba(148, 163, 184, 0.88);
+  --text-primary: #e5edf9;
+  --text-muted: rgba(148, 163, 184, 0.8);
 
-  --accent: #06b6d4;
-  --accent-soft: #38bdf8;
-  --accent-text: #38d0ff;
+  --accent: #0587a6;
+  --accent-soft: #2ba3d4;
+  --accent-text: #33b3de;
 
-  --nav-bg: rgba(3, 4, 12, 0.92);
-  --nav-border: rgba(14, 165, 233, 0.16);
-  --nav-shadow: 0 14px 45px rgba(14, 165, 233, 0.18);
-  --nav-link: rgba(203, 213, 225, 0.85);
-  --nav-link-hover: #7dd3fc;
+  --nav-bg: rgba(1, 3, 12, 0.94);
+  --nav-border: rgba(26, 39, 78, 0.24);
+  --nav-shadow: 0 18px 38px rgba(8, 23, 52, 0.4);
+  --nav-link: rgba(226, 232, 240, 0.86);
+  --nav-link-hover: #66bdda;
 
-  --logo-ring-bg: rgba(8, 12, 24, 0.85);
-  --logo-ring-border: rgba(14, 165, 233, 0.4);
-  --logo-ring-shadow: 0 0 28px rgba(14, 165, 233, 0.38);
+  --logo-ring-bg: rgba(4, 7, 16, 0.92);
+  --logo-ring-border: rgba(24, 36, 72, 0.32);
+  --logo-ring-shadow: 0 0 20px rgba(12, 74, 110, 0.18);
 
-  --chip-bg: rgba(12, 16, 28, 0.85);
-  --chip-border: rgba(14, 165, 233, 0.45);
-  --chip-text: rgba(165, 243, 252, 0.95);
+  --chip-bg: rgba(2, 5, 14, 0.94);
+  --chip-border: rgba(28, 32, 52, 0.55);
+  --chip-text: rgba(214, 226, 245, 0.9);
 
-  --glass-bg: rgba(8, 12, 24, 0.82);
-  --glass-border: rgba(14, 165, 233, 0.18);
-  --glass-shadow: 0 30px 70px rgba(14, 165, 233, 0.26);
+  --glass-bg: rgba(2, 4, 12, 0.92);
+  --glass-border: rgba(20, 24, 44, 0.55);
+  --glass-shadow: 0 26px 60px rgba(5, 12, 28, 0.55);
 
-  --tile-border: rgba(148, 163, 184, 0.2);
-  --tile-hover-border: rgba(14, 165, 233, 0.55);
-  --tile-hover-shadow: 0 30px 60px rgba(14, 165, 233, 0.25);
+  --tile-border: rgba(18, 24, 42, 0.55);
+  --tile-hover-border: rgba(43, 163, 212, 0.32);
+  --tile-hover-shadow: 0 28px 58px rgba(10, 20, 42, 0.5);
 
-  --panel-bg: rgba(5, 8, 16, 0.94);
-  --panel-border: rgba(14, 165, 233, 0.22);
-  --panel-shadow: 0 35px 80px rgba(14, 165, 233, 0.28);
+  --panel-bg: rgba(1, 4, 12, 0.96);
+  --panel-border: rgba(18, 26, 48, 0.55);
+  --panel-shadow: 0 34px 72px rgba(8, 18, 40, 0.52);
 
-  --code-chip-bg: rgba(3, 6, 14, 0.94);
-  --code-chip-border: rgba(14, 165, 233, 0.5);
-  --code-chip-text: #22d3ee;
+  --code-chip-bg: rgba(1, 3, 11, 0.96);
+  --code-chip-border: rgba(18, 32, 60, 0.55);
+  --code-chip-text: #2aa9d1;
 
-  --btn-primary-gradient: linear-gradient(90deg, #0ea5e9 0%, #38bdf8 50%, #22d3ee 100%);
-  --btn-primary-text: #041423;
-  --btn-primary-shadow: 0 25px 45px rgba(14, 165, 233, 0.3);
+  --btn-primary-gradient: linear-gradient(90deg, #036a96 0%, #2ba3d4 45%, #1f8cb5 100%);
+  --btn-primary-text: #010a14;
+  --btn-primary-shadow: 0 26px 48px rgba(7, 22, 40, 0.48);
 
-  --btn-outline-border: rgba(148, 163, 184, 0.4);
-  --btn-outline-text: #e2e8f0;
+  --btn-outline-border: rgba(148, 163, 184, 0.3);
+  --btn-outline-text: #e5edf9;
 
-  --toggle-bg: rgba(12, 16, 28, 0.85);
-  --toggle-border: rgba(56, 189, 248, 0.35);
+  --toggle-bg: rgba(1, 4, 13, 0.92);
+  --toggle-border: rgba(24, 32, 56, 0.5);
 }
 
 html[data-theme="light"] {
