@@ -5,42 +5,37 @@ const generalFaqData = [
   {
     question: "What is HSN Hacks?",
     answer:
-      "HSN Hacks is a coding competition where students can create solutions to problems through technology, run by students from the High School North CS Club and Girls Who Code.",
+      "HSN Hacks is a one day hackathon hosted by the High School North CS Club and Girls Who Code. Students work in small teams to build technology projects that solve meaningful problems.",
   },
   {
-    question: "When is HSN Hacks?",
+    question: "When and where is the event?",
     answer:
-      "Jan 18th from 8 AM to 4 PM",
+      "HSN Hacks takes place on January 18 from 8:00 AM to 4:00 PM at West Windsor-Plainsboro High School North.",
   },
   {
-    question: "Is this hackathon purely coding-based?",
-    answer: "Yes, this hackathon is purely coding based.",
-  },
-  {
-    question: "Where can I find an event schedule?",
+    question: "What is the theme for 2025?",
     answer:
-      "An event schedule has been released it is available on our Google Classroom. Join using the link on the homepage.",
+      "This year's theme is Social Justice & Community Impact. Projects should focus on empowering communities, improving access to resources, or solving social challenges.",
   },
   {
-    question: "What will I build? ",
-    answer: "Build an app, website, or any sort of software that addresses our theme of social justice."
+    question: "What should I expect during the day?",
+    answer:
+      "The day includes opening ceremonies, ideation time, mentor hours, technical workshops, meals, project build time, judging, and a closing showcase. Expect a fast paced but supportive environment.",
   },
   {
-    question: "How will I submit?",
-    answer: "All submissions will take place through our DevPost.",
+    question: "How do project submissions work?",
+    answer:
+      "Teams submit their finished projects through DevPost before the submission deadline announced on-site. You will include a project description, screenshots, and a short demo video or live demo.",
   },
   {
     question: "What should I bring to the hackathon?",
     answer:
-      "You should bring a personal laptop or something to code on, a charger, and snacks you enjoy.",
+      "Bring a laptop or tablet you can code on, chargers, headphones, and any hardware you plan to use. Personal snacks and a reusable water bottle are also recommended.",
   },
   {
     question: "Is food provided?",
-    answer: "Two slices of pizza per person for lunch will be provided. Breakfast and dinner will not be provided. Participants also are free to bring their own food and snacks. Snacks such as chips will be provided aswell.",
-  },
-  {
-    question: "Is this hackathon purely coding-based?",
-    answer: "Yes, this hackathon is purely coding based. ",
+    answer:
+      "Yes. Breakfast snacks, lunch pizza (two slices per participant), and assorted snacks will be available. You are welcome to bring additional food if you have dietary preferences.",
   },
 ];
 
@@ -64,6 +59,16 @@ const teamsFaqData = [
     answer:
       "No, you can compete independently. However, having a team gives you a better hackathon experience.",
   },
+  {
+    question: "Can I team up with students from another grade or school?",
+    answer:
+      "Yes. As long as everyone attends WW-P North/South or a WW-P middle school, mixed-grade teams are encouraged. We also host a team formation activity during check-in for individuals.",
+  },
+  {
+    question: "What if my teammates need to leave early?",
+    answer:
+      "Teams should plan to stay for the entire event. If someone must leave, the remaining teammates can continue and submit as long as at least one member is present for judging.",
+  },
 ];
 
 const logisticsFaqData = [
@@ -85,6 +90,21 @@ const logisticsFaqData = [
     answer:
       "Yes, please fill out the registration form on the home page and join the Google Classroom. ",
   },
+  {
+    question: "What time should I arrive and when does check-in close?",
+    answer:
+      "Check-in opens at 7:30 AM and closes at 8:30 AM. Opening remarks start right after, so please arrive early enough to grab breakfast, settle in, and join a team if needed.",
+  },
+  {
+    question: "Will Wi-Fi and power be available?",
+    answer:
+      "Yes. The venue provides high-speed Wi-Fi and extension cords, but we ask teams to bring a personal power strip if you plan to plug in multiple devices.",
+  },
+  {
+    question: "Do guardians need to sign any permission slips?",
+    answer:
+      "Yes. We will email a participation waiver and emergency contact form to parents/guardians after you register. Bring the signed documents to check-in or submit them digitally beforehand.",
+  },
 ];
 
 const judgesFaqData = [
@@ -94,12 +114,22 @@ const judgesFaqData = [
   },
   {
     question: "Who are the judges?",
-    answer: "Our judges include distinguished CS professionals and past alumini. ",
+    answer: "Our judges include distinguished CS professionals and past alumni.",
   },
   {
     question: "How will they grade projects?",
     answer:
       "Judges will use a rubric to grade projects. They will be given to everyone before the hackathon via our Google Classroom.",
+  },
+  {
+    question: "How long is the judging presentation?",
+    answer:
+      "Each team has 3 minutes to pitch followed by 2 minutes for Q&A. Judges will visit your table during the expo-style showcase, so bring a laptop to demo your project.",
+  },
+  {
+    question: "What criteria matter the most?",
+    answer:
+      "We score on impact, technical execution, creativity, and presentation. Even if you are new to coding, a well scoped idea with clear storytelling can score highly.",
   },
 ];
 
@@ -111,6 +141,21 @@ const prizesFaqData = [
   {
     question: "Are there participation awards?",
     answer: "No, there are no participation awards. ",
+  },
+  {
+    question: "Do we receive anything just for attending?",
+    answer:
+      "All hackers receive event stickers, access to workshops, and sponsor swag (while supplies last). Meals, snacks, and mentorship are also provided to every participant.",
+  },
+  {
+    question: "Are there category or sponsor awards?",
+    answer:
+      "Yes. In addition to the overall top three, sponsors may offer specialty awards such as Best Design, Best Social Impact, or Best First-Time Hacker project. Details will be announced at opening ceremony.",
+  },
+  {
+    question: "How and when are winners announced?",
+    answer:
+      "Winners are announced on stage during closing ceremony. Prizes are distributed immediately after judging finishes, and we will email results and DevPost links to all participants.",
   },
 ];
 
@@ -137,7 +182,7 @@ const FAQ = () => {
           <p className="mx-auto max-w-3xl text-base text-slate-300">
             We pulled together the most common questions about logistics, judging,
             prizes, and how to prepare. Still unsure about something? Reach out to
-            the CS Club organizers and we’ll get you squared away.
+            the CS Club organizers and we will get you squared away.
           </p>
         </header>
 
