@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --bg-color: #01030a;
-  --overlay-1: radial-gradient(circle at 14% 18%, rgba(9, 32, 64, 0.65), transparent 48%);
-  --overlay-2: radial-gradient(circle at 82% 14%, rgba(3, 19, 44, 0.5), transparent 50%);
-  --overlay-3: radial-gradient(circle at 52% 90%, rgba(26, 82, 138, 0.3), transparent 52%);
+  --bg-color: #03050b;
+  --overlay-1: radial-gradient(circle at 14% 18%, rgba(12, 16, 26, 0.42), transparent 48%);
+  --overlay-2: radial-gradient(circle at 78% 12%, rgba(6, 8, 15, 0.38), transparent 54%);
+  --overlay-3: radial-gradient(circle at 52% 90%, rgba(20, 26, 38, 0.35), transparent 56%);
 
   --text-primary: #f4f7ff;
   --text-muted: rgba(170, 184, 212, 0.88);
@@ -16,9 +16,9 @@
   --accent-text: #69e5ff;
   --accent-electric: #00f0ff;
 
-  --nav-bg: rgba(0, 2, 10, 0.95);
-  --nav-border: rgba(21, 38, 78, 0.38);
-  --nav-shadow: 0 28px 70px rgba(0, 4, 12, 0.85);
+  --nav-bg: rgba(0, 2, 8, 0.95);
+  --nav-border: rgba(12, 34, 68, 0.5);
+  --nav-shadow: 0 30px 80px rgba(0, 0, 0, 0.8);
   --nav-link: rgba(220, 230, 245, 0.9);
   --nav-link-hover: #7be6ff;
 
@@ -210,6 +210,65 @@ html[data-theme="light"] .countdown-chip p {
   color: #0b1220;
 }
 
+.aurora-container {
+  position: fixed;
+  inset: -25% -10% -20%;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(85px);
+  opacity: 0.35;
+  mix-blend-mode: lighten;
+}
+
+.aurora-layer {
+  position: absolute;
+  width: 55vw;
+  height: 55vw;
+  border-radius: 9999px;
+  opacity: 0.45;
+  transform: translate(-30%, -30%);
+  animation: aurora-drift 32s ease-in-out infinite alternate;
+  background: radial-gradient(circle, rgba(15, 19, 29, 0.9) 0%, transparent 70%);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.6);
+}
+
+.aurora-layer-2 {
+  top: 25%;
+  left: 45%;
+  animation-duration: 38s;
+  animation-delay: -6s;
+  background: radial-gradient(circle, rgba(40, 52, 72, 0.8) 0%, transparent 65%);
+}
+
+.aurora-layer-3 {
+  top: 55%;
+  left: 10%;
+  animation-duration: 44s;
+  animation-delay: -10s;
+  background: radial-gradient(circle, rgba(82, 94, 116, 0.7) 0%, transparent 60%);
+}
+
+.aurora-layer-4 {
+  top: 5%;
+  left: -10%;
+  width: 65vw;
+  height: 65vw;
+  animation: aurora-drift 50s ease-in-out infinite alternate-reverse;
+  animation-delay: -12s;
+  background: radial-gradient(circle, rgba(160, 172, 188, 0.4) 0%, transparent 70%);
+}
+
+html[data-theme="light"] .aurora-container {
+  opacity: 0.2;
+  mix-blend-mode: normal;
+  filter: blur(75px);
+}
+
+.page-shell {
+  position: relative;
+  z-index: 1;
+}
+
 body {
   min-height: 100vh;
   background-color: var(--bg-color);
@@ -227,6 +286,18 @@ body::before {
   z-index: -1;
   background-image: var(--overlay-1), var(--overlay-2), var(--overlay-3);
   opacity: 1;
+}
+
+@keyframes aurora-drift {
+  0% {
+    transform: translate(-30%, -30%) scale(0.9);
+  }
+  50% {
+    transform: translate(-5%, -10%) scale(1.1);
+  }
+  100% {
+    transform: translate(20%, 15%) scale(0.95);
+  }
 }
 
 @layer base {
@@ -462,26 +533,26 @@ body::before {
     overflow: hidden;
   }
 
-  .hero-grid {
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    padding: clamp(2rem, 4vw, 4rem);
-  }
+.hero-grid {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: clamp(2rem, 4vw, 4rem);
+}
 
-  .hero-grid::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: linear-gradient(var(--grid-line) 1px, transparent 1px),
-      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
-    background-size: 120px 120px;
-    opacity: 0.35;
-    mix-blend-mode: screen;
-    animation: grid-pan 45s linear infinite;
-    pointer-events: none;
-    z-index: 0;
-  }
+.hero-grid::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 120px 120px;
+  opacity: 0.18;
+  mix-blend-mode: screen;
+  animation: grid-pan 45s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
 
   .hero-grid > * {
     position: relative;
@@ -987,6 +1058,7 @@ body::before {
     color: var(--accent-text);
   }
 }
+
 
 
 
