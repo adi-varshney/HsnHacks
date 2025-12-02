@@ -2,18 +2,18 @@
 import NavBar from "../_components/NavBar";
 
 const sponsors = [
-  {
-    name: "Party City",
-    logo: "/partycity.png",
-    url: "https://www.partycity.com/",
-    blurb: "Supplying decor and energy to turn our venue into a true hacker hub.",
-  },
-  {
-    name: "Art of Problem Solving",
-    logo: "/aops.png",
-    url: "https://artofproblemsolving.com/",
-    blurb: "Fueling advanced problem solving and creativity for every attendee.",
-  },
+  // {
+  //   name: "Party City",
+  //   logo: "/partycity.png",
+  //   url: "https://www.partycity.com/",
+  //   blurb: "Supplying decor and energy to turn our venue into a true hacker hub.",
+  // },
+  // {
+  //   name: "Art of Problem Solving",
+  //   logo: "/aops.png",
+  //   url: "https://artofproblemsolving.com/",
+  //   blurb: "Fueling advanced problem solving and creativity for every attendee.",
+  // },
   {
     name: ".xyz Domains",
     logo: "/xyz.jpeg",
