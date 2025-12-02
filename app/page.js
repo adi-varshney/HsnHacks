@@ -17,7 +17,7 @@ if (
 
 const HERO_TEXT = "HSN Hacks 2026";
 const COUNTDOWN_TARGET = "2026-01-31T08:00:00-05:00";
-const CLASSROOM_CODE = "-------";
+const CLASSROOM_CODE = "32txdlk";
 
 const HERO_STATS = [
   {
@@ -26,7 +26,7 @@ const HERO_STATS = [
     detail: "Students from WW-P North/South and partner schools across NJ",
   },
   {
-    label: "Mentor Pods",
+    label: "Mentor",
     value: "10+",
     detail: "Alumni, engineers, and industry advisors supporting teams",
   },
@@ -131,12 +131,12 @@ const TIMELINE = [
     detail:
       "Welcome remarks, prompt reveal, sponsor introductions, and rules overview.",
   },
-  {
-    time: "9:30 AM",
-    phase: "Build Sprint One",
-    detail:
-      "Teams begin development while mentors circulate to support scoping and technical planning.",
-  },
+  // {
+  //   time: "9:30 AM",
+  //   phase: "Build Sprint One",
+  //   detail:
+  //     "Teams begin development while mentors circulate to support scoping and technical planning.",
+  // },
   {
     time: "12:45 PM",
     phase: "Workshops + Office Hours",
