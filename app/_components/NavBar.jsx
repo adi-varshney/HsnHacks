@@ -101,7 +101,7 @@ export default function NavBar() {
             })}
           </nav>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSe2fPYfUYEG-6bziI_BejrhoOyQfn4ff2hDg0y7QAU9imfeSg/viewform"
+            href="https://forms.gle/xQNis3JDuenmikqQ8"
             target="_blank"
             rel="noopener noreferrer"
             className="register-btn shrink-0 whitespace-nowrap px-4 py-2 text-xs font-semibold"
@@ -171,7 +171,7 @@ export default function NavBar() {
             </button>
 
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSe2fPYfUYEG-6bziI_BejrhoOyQfn4ff2hDg0y7QAU9imfeSg/viewform"
+              href="https://forms.gle/xQNis3JDuenmikqQ8"
               target="_blank"
               rel="noopener noreferrer"
               className="register-btn shrink-0 whitespace-nowrap px-6 py-2 text-sm font-semibold"

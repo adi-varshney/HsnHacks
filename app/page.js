@@ -51,7 +51,7 @@ const QUICK_ACTIONS = [
   {
     title: "Registration Form",
     description: "Secure your team slot before we hit room capacity.",
-    href: "https://docs.google.com/forms/d/e/1FAIpQLSe2fPYfUYEG-6bziI_BejrhoOyQfn4ff2hDg0y7QAU9imfeSg/viewform",
+    href: "https://forms.gle/xQNis3JDuenmikqQ8",
     external: true,
   },
   {
@@ -157,7 +157,7 @@ const CTA_GRID = [
     description:
       "Assemble 2-4 friends or solo queue, we'll match you at check-in.",
     action: "Claim a spot",
-    href: "https://docs.google.com/forms/d/e/1FAIpQLSe2fPYfUYEG-6bziI_BejrhoOyQfn4ff2hDg0y7QAU9imfeSg/viewform",
+    href: "https://forms.gle/xQNis3JDuenmikqQ8",
     external: true,
   },
   {
@@ -409,7 +409,7 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap items-center gap-4">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSe2fPYfUYEG-6bziI_BejrhoOyQfn4ff2hDg0y7QAU9imfeSg/viewform"
+              href="https://forms.gle/xQNis3JDuenmikqQ8"
               target="_blank"
               rel="noopener noreferrer"
               className="primary-btn glow-btn inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold"
@@ -709,7 +709,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSe2fPYfUYEG-6bziI_BejrhoOyQfn4ff2hDg0y7QAU9imfeSg/viewform"
+              href="https://forms.gle/xQNis3JDuenmikqQ8"
               target="_blank"
               rel="noopener noreferrer"
               className="primary-btn glow-btn inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold"
@@ -728,3 +728,4 @@ export default function Home() {
     </div>
   );
 }
+
