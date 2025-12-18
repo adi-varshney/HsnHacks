@@ -120,34 +120,43 @@ const ATMOSPHERE_POINTS = [
 
 const TIMELINE = [
   {
-    time: "8:00 AM",
-    phase: "Check-In + Breakfast",
+    time: "7:45 AM",
+    phase: "Doors Open/Check-in",
     detail:
-      "Doors open, registration stations operating, and breakfast served in the cafeteria.",
+      "Participants arrive, bring breakfast (not provided), and get settled with their teams.",
   },
   {
-    time: "9:00 AM",
+    time: "8:15 AM",
     phase: "Opening Ceremony",
     detail:
-      "Welcome remarks, prompt reveal, sponsor introductions, and rules overview.",
+      "Welcome remarks, rule overview, revealing theme, and sponsor shoutouts.",
   },
-  // {
-  //   time: "9:30 AM",
-  //   phase: "Build Sprint One",
-  //   detail:
-  //     "Teams begin development while mentors circulate to support scoping and technical planning.",
-  // },
   {
-    time: "12:45 PM",
-    phase: "Workshops + Office Hours",
+    time: "9:15 AM",
+    phase: "Hacking Begins!",
+    detail: "Coding Begins! Optional workshop sessions start.",
+  },
+  {
+    time: "12:00 PM",
+    phase: "Lunch Break",
+    detail: "Pizza/food served. Concessions available throughout the day.",
+  },
+  {
+    time: "3:30 PM",
+    phase: "Hacking Ends",
     detail:
-      "Rapid sessions on AI, design systems, and pitching while you iterate.",
+      "STOP CODING. All projects must be submitted (e.g., to Devpost) by this time.",
   },
   {
     time: "3:00 PM",
-    phase: "Expo + Awards",
+    phase: "Closing Ceremony",
     detail:
-      "Judges visit each table, finalists present on stage, and awards are announced.",
+      "Closing Remarks. (judging will be done virtually and announced later).",
+  },
+  {
+    time: "4:00 PM",
+    phase: "Event Ends",
+    detail: "Cleanup and dismissal.",
   },
 ];
 
@@ -408,14 +417,14 @@ export default function Home() {
                 all lined up!
               </p>
               <div className="flex flex-wrap items-center gap-4">
-            <a
-              href="https://forms.gle/xQNis3JDuenmikqQ8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="primary-btn glow-btn inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold"
-            >
-              Register your team
-            </a>
+                <a
+                  href="https://forms.gle/xQNis3JDuenmikqQ8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="primary-btn glow-btn inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold"
+                >
+                  Register your team
+                </a>
                 <Link
                   href="/more-info"
                   className="secondary-btn inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold"
@@ -581,6 +590,34 @@ export default function Home() {
           })}
         </section>
 
+        <section
+          ref={timelineRef}
+          className="glass-panel space-y-10 p-6 sm:p-8"
+        >
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div>
+              <p className="text-sm uppercase tracking-[0.35em] text-muted">
+                January 31 Schedule
+              </p>
+              <h2 className="text-3xl font-semibold">Knight-run timeline</h2>
+            </div>
+            <div className="chip px-4 py-1 text-xs uppercase tracking-[0.35em]">
+              8 hours of magic
+            </div>
+          </div>
+          <div className="timeline-grid flex flex-col gap-8">
+            <span className="timeline-axis" aria-hidden="true" />
+            {TIMELINE.map((item) => (
+              <div key={item.time} className="timeline-item">
+                <span className="timeline-dot" aria-hidden="true" />
+                <p className="mono-display text-xl text-accent">{item.time}</p>
+                <h3 className="text-lg font-semibold">{item.phase}</h3>
+                <p className="text-sm text-muted">{item.detail}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
         <section className="grid gap-8 lg:grid-cols-[0.85fr,1.15fr] lg:items-center">
           <div className="glass-panel space-y-6 p-6 sm:p-8">
             <div className="space-y-2">
@@ -592,10 +629,12 @@ export default function Home() {
               </h2>
             </div>
             <p className="text-sm text-muted">
-              HSN Hacks is an independent program built by WW-P North students for the local
-              community. The event blends practical resources(mentorship, workshops, and logistics
-              support) with a polished staging so every team, especially first-time participants,
-              can focus on learning and delivering a thoughtful demo.
+              HSN Hacks is an independent program built by WW-P North students
+              for the local community. The event blends practical
+              resources(mentorship, workshops, and logistics support) with a
+              polished staging so every team, especially first-time
+              participants, can focus on learning and delivering a thoughtful
+              demo.
             </p>
             <ul className="space-y-4 text-sm text-muted">
               {ATMOSPHERE_POINTS.map((point) => (
@@ -625,34 +664,6 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section
-          ref={timelineRef}
-          className="glass-panel space-y-10 p-6 sm:p-8"
-        >
-          <div className="flex flex-wrap items-center justify-between gap-4">
-            <div>
-              <p className="text-sm uppercase tracking-[0.35em] text-muted">
-                January 31 Schedule
-              </p>
-              <h2 className="text-3xl font-semibold">Knight-run timeline</h2>
-            </div>
-            <div className="chip px-4 py-1 text-xs uppercase tracking-[0.35em]">
-              8 hours of magic
-            </div>
-          </div>
-          <div className="timeline-grid flex flex-col gap-8">
-            <span className="timeline-axis" aria-hidden="true" />
-            {TIMELINE.map((item) => (
-              <div key={item.time} className="timeline-item">
-                <span className="timeline-dot" aria-hidden="true" />
-                <p className="mono-display text-xl text-accent">{item.time}</p>
-                <h3 className="text-lg font-semibold">{item.phase}</h3>
-                <p className="text-sm text-muted">{item.detail}</p>
               </div>
             ))}
           </div>
@@ -728,4 +739,3 @@ export default function Home() {
     </div>
   );
 }
-
