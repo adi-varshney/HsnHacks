@@ -1,4 +1,5 @@
 import NavBar from "../_components/NavBar";
+import Footer from "../_components/Footer";
 
 const overview = [
   ["Date", "January 30, 2027"],
@@ -42,7 +43,7 @@ export default function Info() {
           <p>Details for registration, the event guide, workshops, venue, hours, schedule, judging, food, and transportation are TBD. We&apos;ll add them here as they&apos;re confirmed.</p>
         </section>
       </main>
-      <footer className="site-footer section-wrap"><span>HSN HACKS © 2027</span><span>ENVIRONMENTAL PROTECTION</span></footer>
+      <Footer />
     </>
   );
 }

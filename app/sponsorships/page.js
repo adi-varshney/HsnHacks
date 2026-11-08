@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Footer from "../_components/Footer";
 import NavBar from "../_components/NavBar";
 
 export default function Sponsorships() {
@@ -26,7 +27,7 @@ export default function Sponsorships() {
           </aside>
         </section>
       </main>
-      <footer className="site-footer section-wrap"><span>HSN HACKS © 2027</span><span>ENVIRONMENTAL PROTECTION</span></footer>
+      <Footer />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Footer from "./_components/Footer";
 import NavBar from "./_components/NavBar";
 
 const facts = [
@@ -51,6 +52,6 @@ export default function Home() {
 
       <section className="section-wrap close-section"><span className="close-mark" aria-hidden="true">✳</span><p className="section-kicker">HSN HACKS 2027</p><h2>Small teams.<br/><em>Big possibilities.</em></h2><p>Join us January 30, 2027. Registration details and the full event guide will be shared here.</p><Link href="/team" className="button button-light">Meet the 2027 team <span aria-hidden="true">↗</span></Link></section>
     </main>
-    <footer className="site-footer section-wrap"><span>HSN HACKS © 2027</span><span>BUILT FOR WHAT COMES NEXT</span><Link href="/more-info">EVENT INFO ↗</Link></footer>
+    <Footer />
   </>;
 }

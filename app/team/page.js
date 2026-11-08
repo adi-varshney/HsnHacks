@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Footer from "../_components/Footer";
 import NavBar from "../_components/NavBar";
 
 const departments = [
@@ -92,7 +93,7 @@ export default function Team() {
           ))}
         </div>
       </main>
-      <footer className="site-footer section-wrap"><span>HSN HACKS © 2027</span><span>ENVIRONMENTAL PROTECTION</span></footer>
+      <Footer />
     </>
   );
 }

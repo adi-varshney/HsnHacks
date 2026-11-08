@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Footer from "../_components/Footer";
 import NavBar from "../_components/NavBar";
 
 export const metadata = {
@@ -26,7 +27,7 @@ export default function WorkshopsPage() {
           </div>
         </section>
       </main>
-      <footer className="site-footer section-wrap"><span>HSN HACKS © 2027</span><span>ENVIRONMENTAL PROTECTION</span></footer>
+      <Footer />
     </>
   );
 }
