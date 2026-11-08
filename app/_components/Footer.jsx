@@ -8,23 +8,26 @@ const contacts = [
 export default function Footer() {
   return (
     <footer className="site-footer">
-      <div className="section-wrap footer-grid">
-        <div className="footer-brand">
-          <strong>HSN HACKS / 2027</strong>
-          <p>Code for what comes next.</p>
+      <div className="section-wrap footer-layout">
+        <div className="footer-intro">
+          <p className="footer-eyebrow">HSN HACKS / 2027</p>
+          <h2>Contact the <em>organizers.</em></h2>
+          <p>For questions about the event, reach out to either club.</p>
         </div>
-        <div className="footer-contacts">
-          <p className="footer-heading">CONTACT THE ORGANIZERS</p>
-          {contacts.map(({ club, email }) => (
-            <a className="footer-contact-link" href={`mailto:${email}`} key={email}>
+        <div className="footer-contact-grid">
+          {contacts.map(({ club, email }, index) => (
+            <a className="footer-contact-card" href={`mailto:${email}`} key={email}>
+              <span className="footer-card-arrow" aria-hidden="true">↗</span>
+              <small>0{index + 1} / 02</small>
               <b>{club}</b>
-              <small>{email}</small>
+              <strong>{email}</strong>
             </a>
           ))}
         </div>
-        <div className="footer-end">
-          <Link href="/more-info">EVENT DETAILS ↗</Link>
-          <small>© 2027 HSN Hacks</small>
+        <div className="footer-bottom">
+          <strong>© 2027 HSN Hacks</strong>
+          <Link href="/more-info">Event details ↗</Link>
+          <small>Code for what comes next.</small>
         </div>
       </div>
     </footer>
