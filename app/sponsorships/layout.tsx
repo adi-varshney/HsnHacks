@@ -1,8 +1,8 @@
 import type { ReactNode } from "react";
 
 export const metadata = {
-  title: "HSN Hacks | Sponsorships",
-  description: "Partner with HSN Hacks to support student builders with mentors, prizes, and resources.",
+  title: "Sponsors | HSN Hacks 2027",
+  description: "Current sponsor information for HSN Hacks 2027.",
 };
 
 export default function SponsorshipsLayout({ children }: { children: ReactNode }) {

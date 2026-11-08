@@ -1,19 +1,10 @@
 import "./globals.css";
-import { Inter, Space_Mono } from "next/font/google";
 import type { ReactNode } from "react";
-import { ThemeProvider } from "./_components/ThemeProvider";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const spaceMono = Space_Mono({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-mono",
-});
 
 export const metadata = {
-  title: "HSN Hacks",
+  title: "HSN Hacks 2027 | Code for What Comes Next",
   description:
-    "HSN Hacks is a coding competition where students can create solutions to problems through technology, run by students from the High School North CS Club and Girls Who Code.",
+    "HSN Hacks 2027 is a student hackathon themed around environmental protection on January 30, 2027. Teams of up to four and a $500+ prize pool.",
   keywords:
     "High School North, hackathon, programming, coding, competition, software development, app development, computer science",
   icons: {
@@ -23,12 +14,8 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" data-theme="dark">
-      <body className={`${inter.variable} ${spaceMono.variable} font-sans antialiased`}>
-        <ThemeProvider>
-          <div className="min-h-screen">{children}</div>
-        </ThemeProvider>
-      </body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }
